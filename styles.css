@@ -7,6 +7,7 @@ body {
   background-size: cover;
   font-family: "Cinzel";
   font-weight: 900;
+  margin-left: auto;
 }
 
 td,
@@ -17,17 +18,25 @@ th {
 table {
   /* border collapse gets rid of the spacing between the cells 
     border-collapse:collapse; */
+    
   background-color: rgb(32, 6, 105);
   width: 200px;
   height: 300px;
   text-align: center;
   border: 4px solid black;
+  margin-right:10px;
 }
 
-hd:hover {
-  background-color: lightcoral;
-  color: white;
-}
+
+  /* Example code of how to put an image as a background for the actual calculator -- insert this code under "table" on this css sheet */ 
+  
+  /*background-image: url(/examples/calculator/images/thor.jpeg);
+  background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: lighten; */
+
+    /* the background-color works as a filter between the img and the table content */
+
 
 th {
   /* width:100%;  didn't work to make the cell as long as all 3 columns*/
@@ -44,4 +53,12 @@ td:hover {
 
 .operators {
   background-color: rgb(130, 195, 238);
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  right:0;
+  padding-right:10px;
+  font-size: 10px;
 }
