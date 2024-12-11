@@ -1,0 +1,47 @@
+/* We are building a calculator for this project. Make the table, buttons, change widths, etc */
+
+body {
+  background-image: url(easter-raccoon.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Cinzel";
+  font-weight: 900;
+}
+
+td,
+th {
+  border: 4px solid hotpink;
+}
+
+table {
+  /* border collapse gets rid of the spacing between the cells 
+    border-collapse:collapse; */
+  background-color: rgb(32, 6, 105);
+  width: 200px;
+  height: 300px;
+  text-align: center;
+  border: 4px solid black;
+}
+
+hd:hover {
+  background-color: lightcoral;
+  color: white;
+}
+
+th {
+  /* width:100%;  didn't work to make the cell as long as all 3 columns*/
+  /* can't use "column-span: ;" here bc we want to change the structure, not the styling */
+  background-color: rgb(241, 241, 126);
+}
+
+td {
+  background-color: aquamarine;
+}
+td:hover {
+  background-color: aqua;
+}
+
+.operators {
+  background-color: rgb(130, 195, 238);
+}
